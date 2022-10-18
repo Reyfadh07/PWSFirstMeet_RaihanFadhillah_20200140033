@@ -28,6 +28,11 @@ public class BarangKeluarJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("ws.a_learnmigratedb_jar_0.0.1-SNAPSHOTPU");
 
+    public BarangKeluarJpaController() {
+    }
+    
+    
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
