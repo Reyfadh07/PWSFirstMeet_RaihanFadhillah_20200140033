@@ -30,6 +30,11 @@ public class PengurusJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("ws.a_learnmigratedb_jar_0.0.1-SNAPSHOTPU");
 
+    public PengurusJpaController() {
+    }
+    
+    
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
